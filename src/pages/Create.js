@@ -3,14 +3,30 @@ import * as React from "react";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
-import AcUnitOutlinedIcon from "@mui/icons-material/AcUnitOutlined";
-import SendIcon from "@mui/icons-material/Send";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  btn: {
+    fontSize: 60,
+    backgroundColor: "violet",
+    "&:hover": {
+      backgroundColor: "blue",
+    },
+  },
+  title: {
+    textDecoration: "underline",
+    marginBottom: 20,
+  },
+});
 
 export default function Create() {
+  const classes = useStyles();
+
   return (
     <Container>
       <Typography
+        className={classes.title}
         variant="h6"
         color="textSecondary"
         component="h2"
@@ -20,6 +36,7 @@ export default function Create() {
       </Typography>
 
       <Button
+        className={classes.btn}
         type="submit"
         color="secondary"
         variant="contained"
@@ -28,15 +45,6 @@ export default function Create() {
       >
         Submit
       </Button>
-
-      {/* icons */}
-      {/* <br />
-      <AcUnitOutlinedIcon />
-      <AcUnitOutlinedIcon color="secondary" fontSize="large" />
-      <AcUnitOutlinedIcon color="secondary" fontSize="small" />
-      <AcUnitOutlinedIcon color="action" fontSize="small" />
-      <AcUnitOutlinedIcon color="error" fontSize="small" />
-      <AcUnitOutlinedIcon color="disabled" fontSize="small" /> */}
     </Container>
   );
 }
