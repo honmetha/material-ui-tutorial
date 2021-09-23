@@ -6,19 +6,7 @@ import Container from "@material-ui/core/Container";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles({
-  btn: {
-    fontSize: 60,
-    backgroundColor: "violet",
-    "&:hover": {
-      backgroundColor: "blue",
-    },
-  },
-  title: {
-    textDecoration: "underline",
-    marginBottom: 20,
-  },
-});
+const useStyles = makeStyles({});
 
 export default function Create() {
   const classes = useStyles();
@@ -26,7 +14,6 @@ export default function Create() {
   return (
     <Container>
       <Typography
-        className={classes.title}
         variant="h6"
         color="textSecondary"
         component="h2"
@@ -36,7 +23,6 @@ export default function Create() {
       </Typography>
 
       <Button
-        className={classes.btn}
         type="submit"
         color="secondary"
         variant="contained"
