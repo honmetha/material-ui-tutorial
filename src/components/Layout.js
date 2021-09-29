@@ -11,6 +11,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import { format } from "date-fns";
+import Avatar from "@material-ui/core/Avatar";
 
 const drawerWidth = 240;
 
@@ -43,6 +44,9 @@ const useStyles = makeStyles((theme) => {
     date: {
       flexGrow: 1,
     },
+    avatar: {
+      marginLeft: theme.spacing(2),
+    },
   };
 });
 
@@ -73,6 +77,7 @@ export default function Layout({ children }) {
             Today is the {format(new Date(), "do MMMM Y")}
           </Typography>
           <Typography>Mario</Typography>
+          <Avatar src="/mario-av.png" className={classes.avatar} />
         </Toolbar>
       </AppBar>
 
