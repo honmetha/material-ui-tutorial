@@ -14,6 +14,7 @@ import { format } from "date-fns";
 import Avatar from "@material-ui/core/Avatar";
 
 const drawerWidth = 240;
+const appBarHeight = 64;
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -21,6 +22,7 @@ const useStyles = makeStyles((theme) => {
       background: "#f9f9f9",
       width: "100%",
       padding: theme.spacing(3),
+      minHeight: `calc(100vh - ${appBarHeight}px)`,
     },
     drawer: {
       width: drawerWidth,
