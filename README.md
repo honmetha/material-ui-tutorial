@@ -25,12 +25,7 @@
 
 ## ⚙️ Technologies
 
-![Material UI](./public/mui-logo.png)
-![React Masonry CSS](./public/react-masonry-css-logo.png)
-
-![Material UI](./public/mui-logo.png) | ![React Masonry CSS](./public/react-masonry-css-logo.png)
-
 <p float="left">
-  <img src="./public/mui-logo.png" width="200" />
+  <img src="./public/mui-logo.png" width="132" />
   <img src="./public/react-masonry-css-logo.png" />
 </p>
