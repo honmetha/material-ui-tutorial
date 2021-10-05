@@ -1,6 +1,6 @@
 # Material UI Tutorial
 
-![Demo 1](./public/demo-1.png)
+![Demo](./public/demo-1.png)
 
 ## 📖 Chapters
 
@@ -22,3 +22,15 @@
 1. App Bars
 1. Avatars
 1. React Masonry CSS (masonry layout)
+
+## ⚙️ Technologies
+
+![Material UI](./public/mui-logo.png)
+![React Masonry CSS](./public/react-masonry-css-logo.png)
+
+![Material UI](./public/mui-logo.png) | ![React Masonry CSS](./public/react-masonry-css-logo.png)
+
+<p float="left">
+  <img src="./public/mui-logo.png" width="200" />
+  <img src="./public/react-masonry-css-logo.png" />
+</p>
