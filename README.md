@@ -1,5 +1,7 @@
 # Material UI Tutorial
 
+![Demo 1](./public/demo-1.png)
+
 ## 📖 Chapters
 
 1. Intro & Setup
